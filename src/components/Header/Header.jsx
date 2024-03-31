@@ -48,7 +48,7 @@ const Header = () => {
                         onClick={() => setMobileMenuOpen(true)}
                     >
                         <span className="sr-only">Open main menu</span>
-                        <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+                        <Bars3Icon className="h-6 w-6 mx-3" aria-hidden="true" />
                     </button>
                 </div>
                 <Popover.Group className="w-6/12 sm:hidden md:hidden flex xl:gap-x-12 inline-block ">

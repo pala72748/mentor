@@ -64,7 +64,7 @@ const Coursesimilar = () => {
                 {
                     course.map((courseItem, index) => {
                         return (
-                            <div key={index} className="sm:w-full bg-white border my-6 border-gray-200 rounded-lg shadow">
+                            <div key={index} className="sm:w-[94vw] bg-white border my-6 border-gray-200 rounded-lg shadow">
                                 <a href="#">
                                     <img className="rounded-t-lg" src={courseItem.img} alt="" />
                                 </a>

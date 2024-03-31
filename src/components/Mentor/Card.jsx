@@ -53,7 +53,7 @@ const Card = () => {
                     {
                         card.map((item, index) => {
                             return (
-                                <div key={index} className='xl:container mx-auto xl:w-3/12'>
+                                <div key={index} className='xl:container mx-auto xl:w-3/12 my-5'>
                                     <div className='mx-2 border xl:h-[450px] sm:h-[480px] shadow-lg rounded-3xl bg-[#0077fc] px-4'>
                                         <div>
                                             <img src={item.image} alt="" className='py-4' />

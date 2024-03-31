@@ -10,9 +10,9 @@ const Mentor = () => {
                 <div className='flex flex-col justify-center items-center h-72 border-2'>
                     <div className=''>
 
-                        <h2 className='text-3xl font-bold sm:text-2xl'>Hi Ope, Let’s start Your Learning</h2>
+                        <h2 className='text-3xl font-bold sm:text-xl'>Hi Ope, Let’s start Your Learning</h2>
                     </div>
-                    <div className='w-[450px] items-start mt-3 sm:max-w-sm'>
+                    <div className='w-auto items-start mt-3 sm:max-w-sm'>
                         <form action="" className='flex flex-row justify-between'>
                             <input type="text" className='py-2 pl-2 w-full' placeholder='What do you want to learn?' />
                             <button className='py-3 px-6 bg-[#2904f5] text-white mx-2 rounded-lg'>Search</button>

@@ -45,7 +45,7 @@ const Profile = () => {
         <div className='flex flex-col justify-center items-center h-72 border-2'>
           <div className=' mx-auto grid justify-items-center'>
             <LiaUserSolid size={100} style={{ backgroundColor: "#d9d9d9", borderRadius: 50, padding: 30 }} />
-            <h2 className='text-3xl font-bold sm:text-2xl'>Hi Ope, Let’s start Your Learning</h2>
+            <h2 className='text-3xl font-bold sm:text-xl'>Hi Ope, Let’s start Your Learning</h2>
           </div>
         </div>
       </div>
