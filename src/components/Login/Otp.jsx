@@ -6,13 +6,13 @@ const Otp = () => {
     return (
         <>
             <Header />
-            <div className="bg-[#2500f9] text-gray-900 flex justify-between h-screen font-poppins">
+            <div className=" bg-[#2500f9] text-gray-900 flex justify-between h-screen font-poppins">
                 <div className=" m-0 sm:m-10 shadow sm:rounded-lg flex justify-between flex-1">
                     <div className="lg:w-2/6 xl:w-3/12 p-6 sm:p-12 sm:hidden">
                         <h2 className='text-white text-3xl font-semibold '>Start your Learning with Kjxsofttech</h2>
                         <img src={login} className='align-bottom fixed bottom-0' alt="" />
                     </div>
-                    <div className="lg:w-4/6 xl:w-9/12 sm:w-[80vw] w-screen xl:p-6 bg-white  rounded-[16px]">
+                    <div className=" lg:w-4/6 xl:w-9/12 sm:w-11/12 w-screen xl:p-6 bg-white  rounded-[16px]">
                         <div className="mt-12 flex flex-col">
                             <h1 className="text-2xl xl:text-3xl sm:text-center text-start sm:m-0 ml-[250px] font-extrabold">
                                 Verify Your Code
