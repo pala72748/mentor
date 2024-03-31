@@ -19,7 +19,7 @@ const Otp = () => {
                             </h1>
                             <div className="lg:w-4/6 xl:w-6/12 xl:mx-auto  sm:w-full mt-10 rounded ">
                                 <form className=" px-4 py-6">
-                                    <div className="flex gap-2 mb-6">
+                                    <div className="flex gap-2 mb-6 sm:grid sm:grid-cols-6 sm:justify-items-center">
                                         <input className="w-12 h-12 sm:w-10 sm:h-10 text-center border rounded-md shadow-sm focus:border-teal-500 focus:ring-teal-500" type="text" maxlength="1" pattern="[0-9]" inputmode="numeric" autocomplete="one-time-code" required />
                                         <input className="w-12 h-12 sm:w-10 sm:h-10 text-center border rounded-md shadow-sm focus:border-teal-500 focus:ring-teal-500" type="text" maxlength="1" pattern="[0-9]" inputmode="numeric" autocomplete="one-time-code" required />
                                         <input className="w-12 h-12 sm:w-10 sm:h-10 text-center border rounded-md shadow-sm focus:border-teal-500 focus:ring-teal-500" type="text" maxlength="1" pattern="[0-9]" inputmode="numeric" autocomplete="one-time-code" required />
