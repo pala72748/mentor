@@ -13,10 +13,10 @@ import { Link } from 'react-router-dom'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 import logo from "../../assets/logo.png";
 const products = [
-    { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-    { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-    { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-    { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
+    { name: 'Profile', link:"/profile", description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
+    { name: 'Course Detail', link:"/course-detail", description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
+    { name: 'Mentor', link:"/mentor", description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
+    { name: 'Checkout', link:"/checkout", description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
     { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
 
 ]
@@ -81,10 +81,10 @@ const Header = () => {
                                                 <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
                                             </div>
                                             <div className="flex-auto">
-                                                <a href={item.href} className="block font-semibold text-gray-900">
+                                                <Link to={item.link} className="block font-semibold text-gray-900">
                                                     {item.name}
                                                     <span className="absolute inset-0" />
-                                                </a>
+                                                </Link>
                                                 <p className="mt-1 text-gray-600">{item.description}</p>
                                             </div>
                                         </div>
@@ -179,7 +179,9 @@ const Header = () => {
                                                         href={item.href}
                                                         className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                                                     >
+                                                        <Link to={item.link}>
                                                         {item.name}
+                                                        </Link>
                                                     </Disclosure.Button>
                                                 ))}
                                             </Disclosure.Panel>

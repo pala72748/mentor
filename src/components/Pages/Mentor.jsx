@@ -2,7 +2,6 @@ import React from 'react'
 import Header from '../Header/Header';
 import bg from "../../assets/bg.png";
 import Card from '../Mentor/Card';
-import Searchselect from '../Mentor/SearchSelect';
 const Mentor = () => {
     return (
         <>
@@ -31,7 +30,6 @@ const Mentor = () => {
             <Card/>
             <Card/>
             <Card/>
-            <Searchselect style={"w-6/12"} label={"Train Number"} />
         </>
     )
 }
