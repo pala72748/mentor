@@ -9,34 +9,36 @@ import graduate from "../../assets/graduate.png";
 import Cards from '../Cards/Cards';
 import Course from '../Cards/Course';
 import Footer from '../Footer/Footer';
-
+import bg from "../../assets/bg.png";
 
 const Home = () => {
     return (
         <>
             <Header />
-            <div className='xl:xl:container mx-auto font-poppins flex sm:flex sm:flex-col-reverse items-center justify-between p-6 lg:px-8 '>
-                <div className=' lg:w-1/2 sm:w-full'>
-                    <h2 className='xl:text-6xl mb-8 font-bold sm:text-4xl'>Learn a new skill with Kjxsoftech</h2>
-                    <p className='text-2xl sm:w-full'>Acquire a new skill, initiate a project, and achieve your desired career path.</p>
-                    <div className="hidden lg:flex lg:flex-1 lg:justify-start mt-10">
-                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-9 rounded ">
-                            Find Your Mentor
-                        </button>
-                        <button class=" text-black font-bold py-2 px-4 rounded mx-2">
-                            Become a Mentor
-                        </button>
-                    </div>
-                    <div className='my-6 flex items-center'>
-                        <img src={student} alt="" />
-                        <div className='mx-5 flex flex-col'>
-                            <h2 className='text-xl font-semibold'>250K</h2>
-                            <p className='sm:text-md'>HAPPY STUDENTS</p>
+            <div className='bg-center bg-cover' style={{ backgroundImage: `url(${bg})` }} >
+                <div  className=' xl:container mx-auto font-poppins flex sm:flex sm:flex-col-reverse items-center justify-between p-6 lg:px-8 '>
+                    <div className=' lg:w-1/2 sm:w-full'>
+                        <h2 className='xl:text-6xl mb-8 font-bold sm:text-4xl'>Learn a new skill with Kjxsoftech</h2>
+                        <p className='text-2xl sm:w-full'>Acquire a new skill, initiate a project, and achieve your desired career path.</p>
+                        <div className="hidden lg:flex lg:flex-1 lg:justify-start mt-10">
+                            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-9 rounded ">
+                                Find Your Mentor
+                            </button>
+                            <button class=" text-black font-bold py-2 px-4 rounded mx-2">
+                                Become a Mentor
+                            </button>
+                        </div>
+                        <div className='my-6 flex items-center'>
+                            <img src={student} alt="" />
+                            <div className='mx-5 flex flex-col'>
+                                <h2 className='text-xl font-semibold'>250K</h2>
+                                <p className='sm:text-md'>HAPPY STUDENTS</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className='w-full lg:w-1/2 sm:h-auto'>
-                    <img className="h-auto w-[650px] sm:w-full " src={banner} alt="" />
+                    <div className='w-full lg:w-1/2 sm:h-auto'>
+                        <img className="h-auto w-[650px] sm:w-full " src={banner} alt="" />
+                    </div>
                 </div>
             </div>
             <div className='xl:container font-poppins mx-auto lg:p-6 max-w-[1300px] sm:w-full '>
@@ -47,7 +49,7 @@ const Home = () => {
             </div>
             <div className='xl:container  font-poppins mx-auto flex items-center justify-between'>
                 <div className='flex xl:flex-row sm:w-11/12 sm:mx-4 justify-center items-center grid sm:grid-cols-1 sm:border sm:flex-col sm:items-center md:grid-cols-2 md:gap-2 grid-cols-4 gap-4'>
-                   <Cards/>
+                    <Cards />
                 </div>
             </div>
             <div className='mx-auto font-poppins flex max-w-7xl items-center justify-between p-6 lg:px-8 mt-12 '>
@@ -95,7 +97,7 @@ const Home = () => {
             </div>
             <div className='xl:container font-poppins mx-auto  items-center lg:h-screen'>
                 <div className='flex flex-row sm:flex-col sm:flex sm:mx-auto grid gap-8 grid-cols-3 lg:flex-row items-center justify-between p-6 lg:px-8'>
-                    <Course/>
+                    <Course />
                 </div>
             </div>
             <div className='xl:container font-poppins mx-auto lg:p-6  sm:w-full '>
@@ -105,10 +107,10 @@ const Home = () => {
             </div>
             <div className='xl:container font-poppins mx-auto items-center'>
                 <div className='flex flex-row sm:flex-col sm:flex sm:mx-auto grid gap-8 grid-cols-3 lg:flex-row items-center justify-between p-6 lg:px-8'>
-                    <Course/>
+                    <Course />
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </>
     )
 }
