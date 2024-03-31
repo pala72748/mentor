@@ -68,7 +68,7 @@ const Course = () => {
                             </div>
                             <div className="p-5">
                                 <a href="#">
-                                    <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white border-b-2 pb-6">Supervised Machine Learning: Regression and Classification</h5>
+                                    <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 border-b-2 pb-6">Supervised Machine Learning: Regression and Classification</h5>
                                 </a>
                                 <div className="mx-auto flex flex-row flex-wrap items-center justify-between">
                                     <div className="flex flex-row my-6">
