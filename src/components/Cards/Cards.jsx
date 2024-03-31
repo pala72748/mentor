@@ -32,7 +32,7 @@ const Cards = () => {
                     <div key={index} className='w-full'>
                         <a href="#" className={`block max-w-sm p-6 border-t-4 bg-white lg:border-${lgBorderColors[index]} rounded-b-lg shadow `}>
                             <LiaUserFriendsSolid style={{ fontSize: 40, backgroundColor: card.backgroundColor, color: "white", padding: 5, borderRadius: 5 }} />
-                            <h5 className="my-6 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{card.name}</h5>
+                            <h5 className="my-6 text-2xl font-bold tracking-tight text-gray-900">{card.name}</h5>
                             <p className="font-normal text-gray-700 dark:text-gray-400">{card.desc}.</p>
                         </a>
                     </div>

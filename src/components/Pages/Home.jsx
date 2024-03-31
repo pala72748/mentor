@@ -15,8 +15,8 @@ const Home = () => {
     return (
         <>
             <Header />
-            <div className='bg-center bg-cover' style={{ backgroundImage: `url(${bg})` }} >
-                <div  className=' xl:container mx-auto font-poppins flex sm:flex sm:flex-col-reverse items-center justify-between p-6 lg:px-8 '>
+            <div className='w-full bg-center bg-cover' style={{ backgroundImage: `url(${bg})` }} >
+                <div  className='w-full xl:container mx-auto font-poppins flex sm:flex sm:flex-col-reverse items-center justify-between p-6 lg:px-8 '>
                     <div className=' lg:w-1/2 sm:w-full'>
                         <h2 className='xl:text-6xl mb-8 font-bold sm:text-4xl'>Learn a new skill with Kjxsoftech</h2>
                         <p className='text-2xl sm:w-full'>Acquire a new skill, initiate a project, and achieve your desired career path.</p>
@@ -47,8 +47,8 @@ const Home = () => {
                     <p className='text-4xl mb-8 font-bold sm:text-3xl'>The Benefits You Get When You Study at Kjxsoftech</p>
                 </div>
             </div>
-            <div className='xl:container  font-poppins mx-auto flex items-center justify-between'>
-                <div className='flex xl:flex-row sm:w-11/12 sm:mx-4 justify-center items-center grid sm:grid-cols-1 sm:border sm:flex-col sm:items-center md:grid-cols-2 md:gap-2 grid-cols-4 gap-4'>
+            <div className='xl:container md:mx-auto  font-poppins mx-auto flex items-center justify-between'>
+                <div className='flex md:mx-auto xl:flex-row sm:w-11/12 sm:mx-4 justify-center items-center grid sm:grid-cols-1  sm:flex-col sm:items-center md:grid-cols-2 md:gap-2 grid-cols-4 gap-4'>
                     <Cards />
                 </div>
             </div>
