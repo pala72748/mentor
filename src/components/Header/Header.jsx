@@ -33,8 +33,8 @@ const Header = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
-        <header className="bg-white font-poppins">
-            <nav className="container mx-auto flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+        <header className="bg-white font-poppins shadow-lg">
+            <nav className="xl:container mx-auto flex flex-row items-center justify-between py-6 lg:px-8" aria-label="Global">
                 <div className="flex xl:flex-1">
                     <a href="#" className="-m-1.5 p-1.5">
                         <span className="sr-only">Your Company</span>
@@ -51,7 +51,7 @@ const Header = () => {
                         <Bars3Icon className="h-6 w-6" aria-hidden="true" />
                     </button>
                 </div>
-                <Popover.Group className="sm:hidden md:hidden flex xl:gap-x-12">
+                <Popover.Group className="w-6/12 sm:hidden md:hidden flex xl:gap-x-12 inline-block ">
                     <Link to="/" className="text-sm font-semibold leading-6 text-gray-900">
                         Home
                     </Link>
@@ -114,8 +114,11 @@ const Header = () => {
                     <Link to='/verify-otp' className="text-sm font-semibold leading-6 text-gray-900">
                         Otp
                     </Link>
+                    <Link to='/checkout' className="text-sm font-semibold leading-6 text-gray-900">
+                        Checkout
+                    </Link>
                 </Popover.Group>
-                <div className="sm:hidden md:hidden xl:flex xl:flex-1 xl:justify-center ">
+                <div className="w-4/12 sm:hidden md:hidden xl:flex xl:flex-1 xl:justify-between ">
                     <Link to="/login">
                         <button class=" text-black font-bold py-2 px-4 rounded mx-2">
                             Sign In

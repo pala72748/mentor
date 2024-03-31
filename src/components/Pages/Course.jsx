@@ -1,12 +1,8 @@
 import React, { useState } from 'react';
 import Header from '../Header/Header';
-import { FaPlay } from "react-icons/fa";
-import person from "../../assets/person.png";
-import one from "../../assets/images/1.png";
-import two from "../../assets/images/2.png";
-import three from "../../assets/images/3.png";
 import Coursetab from '../tab/Coursetab';
-import CourseCard from '../Cards/Course'; // Renamed Course to CourseCard
+import CourseCard from '../Cards/Course'; 
+import bg from "../../assets/bg.png";
 
 const Course = () => {
     const [activeTab, setActiveTab] = useState(1);
@@ -17,9 +13,10 @@ const Course = () => {
     return (
         <>
             <Header />
-            <div className='mx-auto w-full bg-[#e5e5e5] font-poppins'>
+            <div className='mx-auto w-full bg-[#F8F8F8] font-poppins bg-center bg-cover' style={{backgroundImage:`url(${bg})`}}>
                 <div className='flex flex-col justify-center items-center h-72 border-2'>
                     <div className=''>
+                        
                         <h2 className='text-3xl font-bold sm:text-2xl'>Hi Ope, Let’s start Your Learning</h2>
                     </div>
                     <div className='w-[450px] items-start mt-3 sm:max-w-sm'>

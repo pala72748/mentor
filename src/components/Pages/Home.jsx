@@ -8,15 +8,16 @@ import laptop from "../../assets/laptop.png";
 import graduate from "../../assets/graduate.png";
 import Cards from '../Cards/Cards';
 import Course from '../Cards/Course';
+import Footer from '../Footer/Footer';
 
 
 const Home = () => {
     return (
         <>
             <Header />
-            <div className='mx-auto font-poppins flex max-w-[1200px] sm:flex sm:flex-col-reverse items-center justify-between p-6 lg:px-8 '>
-                <div className='w-full lg:w-1/2 sm:w-[80vw]'>
-                    <h2 className='text-6xl mb-8 font-bold sm:text-4xl'>Learn a new skill with Kjxsoftech</h2>
+            <div className='xl:xl:container mx-auto font-poppins flex sm:flex sm:flex-col-reverse items-center justify-between p-6 lg:px-8 '>
+                <div className=' lg:w-1/2 sm:w-full'>
+                    <h2 className='xl:text-6xl mb-8 font-bold sm:text-4xl'>Learn a new skill with Kjxsoftech</h2>
                     <p className='text-2xl sm:w-full'>Acquire a new skill, initiate a project, and achieve your desired career path.</p>
                     <div className="hidden lg:flex lg:flex-1 lg:justify-start mt-10">
                         <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-9 rounded ">
@@ -38,14 +39,14 @@ const Home = () => {
                     <img className="h-auto w-[650px] sm:w-full " src={banner} alt="" />
                 </div>
             </div>
-            <div className='container font-poppins mx-auto lg:p-6 max-w-[1300px] sm:w-full '>
+            <div className='xl:container font-poppins mx-auto lg:p-6 max-w-[1300px] sm:w-full '>
                 <div className='text-center'>
                     <h2 className='text-xl py-5'>WHY CHOOSE US</h2>
                     <p className='text-4xl mb-8 font-bold sm:text-3xl'>The Benefits You Get When You Study at Kjxsoftech</p>
                 </div>
             </div>
-            <div className=' font-poppins mx-auto flex max-w-[1200px] items-center justify-between'>
-                <div className='flex flex-row justify-center items-center grid sm:grid-cols-1 sm:flex-col sm:items-center mx-auto md:grid-cols-2 md:gap-2 grid-cols-4 gap-4'>
+            <div className='xl:container  font-poppins mx-auto flex items-center justify-between'>
+                <div className='flex xl:flex-row sm:w-11/12 sm:mx-4 justify-center items-center grid sm:grid-cols-1 sm:border sm:flex-col sm:items-center md:grid-cols-2 md:gap-2 grid-cols-4 gap-4'>
                    <Cards/>
                 </div>
             </div>
@@ -81,7 +82,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className='container font-poppins mx-auto max-w-[1300px] sm:w-full'>
+            <div className='xl:container font-poppins mx-auto max-w-[1300px] sm:w-full'>
                 <div className='flex flex-row items-center justify-between p-6 lg:px-8 sm:flex-col'>
                     <div className='xl:w-5/6 mb-4 lg:text-left lg:mb-0 sm:w-full sm:text-center md:text-left ' >
                         <h2 className="text-2xl lg:text-4xl font-semibold">Our Most Popular Courses</h2>
@@ -92,21 +93,22 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className='container font-poppins mx-auto max-w-[1300px] items-center lg:h-screen'>
+            <div className='xl:container font-poppins mx-auto  items-center lg:h-screen'>
                 <div className='flex flex-row sm:flex-col sm:flex sm:mx-auto grid gap-8 grid-cols-3 lg:flex-row items-center justify-between p-6 lg:px-8'>
                     <Course/>
                 </div>
             </div>
-            <div className='container font-poppins mx-auto lg:p-6 max-w-[1300px] sm:w-full '>
+            <div className='xl:container font-poppins mx-auto lg:p-6  sm:w-full '>
                 <div className='text-center'>
                     <h2 className='text-5xl py-5 font-bold'>Meet Your Instructors</h2>
                 </div>
             </div>
-            <div className='container font-poppins mx-auto max-w-[1300px] items-center'>
+            <div className='xl:container font-poppins mx-auto items-center'>
                 <div className='flex flex-row sm:flex-col sm:flex sm:mx-auto grid gap-8 grid-cols-3 lg:flex-row items-center justify-between p-6 lg:px-8'>
                     <Course/>
                 </div>
             </div>
+            <Footer/>
         </>
     )
 }
