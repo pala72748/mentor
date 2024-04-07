@@ -9,6 +9,7 @@ import Profile from "./components/Pages/Profile";
 import CourseDetail from "./components/Pages/CourseDetail";
 import Checkout from "./components/Pages/Checkout";
 import Mentor from "./components/Pages/Mentor";
+import Cart from "./components/Pages/Cart";
 
 function App() {
   return (
@@ -17,13 +18,14 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/login" element={<Signin/>}/>
-          <Route path="/verify-otp" element={<Otp/>}/>
-          <Route path="/course" element={<Course/>}/>
-          <Route path="/profile" element={<Profile/>}/>
-          <Route path="/course-detail" element={<CourseDetail/>} />
-          <Route path="/checkout" element={<Checkout/>} />
-          <Route path="/mentor" element={<Mentor/>} />
+          <Route path="/login" element={<Signin />} />
+          <Route path="/verify-otp" element={<Otp />} />
+          <Route path="/course" element={<Course />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/course-detail" element={<CourseDetail />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/mentor" element={<Mentor />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
       </BrowserRouter>
     </>

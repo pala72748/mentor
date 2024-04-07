@@ -117,6 +117,9 @@ const Header = () => {
                     <Link to='/checkout' className="text-sm font-semibold leading-6 text-gray-900">
                         Checkout
                     </Link>
+                    <Link to='/cart' className="text-sm font-semibold leading-6 text-gray-900">
+                        Cart
+                    </Link>
                 </Popover.Group>
                 <div className="w-4/12 sm:hidden md:hidden xl:flex xl:flex-1 xl:justify-between ">
                     <Link to="/login">
