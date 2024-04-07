@@ -30,7 +30,7 @@ const Course = () => {
                 </div>
             </div>
             <div className="container w-full xl:mx-auto mt-8 sm:mx-6 font-poppins" >
-                <div className="flex sm:flex-row sm:w-[90vw]  border-b-4">
+                <div className="flex sm:flex-col sm:w-[90vw]  border-b-4">
                     <button
                         className={`px-4 py-2 ${activeTab === 1 ? ' text-[#2904f5] border-b-4 border-[#2904f5] text-2xl' : 'bg-white text-2xl'
                             }`}
@@ -64,7 +64,7 @@ const Course = () => {
                     {activeTab === 1 && <div className="p-4 bg-white shadow-lg sm:w-[90vw]"><Coursetab /></div>}
                     {activeTab === 2 && <div className="p-4 bg-white"><Learning /></div>}
                     {activeTab === 3 && <div className="p-4 bg-gray-100">Content of Tab 3</div>}
-                    {activeTab === 4 && <div className="p-4 bg-white"><Bookmark /></div>}
+                    {activeTab === 4 && <div className=" bg-white sm:w-[90vw]"><Bookmark /></div>}
                 </div>
             </div>
             <div className='container xl:mx-auto lg:p-6 font-poppins'>

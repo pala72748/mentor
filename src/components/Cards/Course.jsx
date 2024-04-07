@@ -58,7 +58,7 @@ const Course = () => {
             {
                 course.map((courseItem, index) => {
                     return (
-                        <div key={index} className="max-w-sm bg-white border my-6 border-gray-200 rounded-lg shadow">
+                        <div key={index} className="max-w-sm bg-white border xl:my-6 border-gray-200 rounded-lg shadow">
                             <a href="#">
                                 <img className="rounded-t-lg" src={courseItem.img} alt="" />
                             </a>
